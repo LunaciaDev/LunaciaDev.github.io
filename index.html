@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
     <title>Lunacia</title>
     <meta charset="UTF-8">
@@ -7,7 +8,9 @@
     <script src="anim.js"></script>
 </head>
 <html lang="en">
-    <body>
+
+<body>
+    <div id="wrapper">
         <div id="header">
             <div id="userFrame">
                 <!--pfp soon:tm:?-->
@@ -16,9 +19,13 @@
             <div id="banner">
                 <!--for later, might not use at all-->
             </div>
-            <button id="aboutMe">Me!</button>
-            <button id="interests">Interests</button>
-            <button id="contacts">Contacts</button>
+        </div>
+        <div id="selectionBar">
+            <button id="homeButton">home</button>
+            <button id="interestsButton">interests</button>
+            <button id="myWorksButton">my works</button>
+            <button id="contactsButton">contacts</button>
+            <button id="creditsButton">credits</button>
         </div>
         <section id="aboutMe">
             <p>Hi, I am Lunacia!</p>
@@ -26,7 +33,7 @@
             <p>I love solving puzzles, books and programming.</p>
             <p>I am currently studying for a Bachelor's Decree while working on small projects on the side.</p>
         </section>
-        <section id="interests">
+        <section id="interests" style="display: none;">
             <p>I love...</p>
             <ul>
                 <li>Watching anime; My favourite is Yuru Camp</li>
@@ -35,13 +42,13 @@
                 <li>Reading about the universe</li>
             </ul>
         </section>
-        <section id="credits">
+        <section id="credits" style="display: none;">
             TBA
         </section>
-        <section id="myWorks">
+        <section id="myWorks" style="display: none;">
             TBA
         </section>
-        <section id="contacts">
+        <section id="contacts" style="display: none;">
             TBA
         </section>
         <div id="footer">
@@ -54,5 +61,7 @@
                 <a href="https://linktr.ee/LunaciaDev">linktree</a>
             </div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>

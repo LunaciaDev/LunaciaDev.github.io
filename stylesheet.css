@@ -18,28 +18,99 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
     font-family: "Imprima";
     font-size: 25px;
+	color: black;
+	background-color: #2c373b;
 	line-height: 1.5;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+#wrapper {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: var(--viewport-height);
+	overflow: hidden;
+	position: relative;
+	z-index: 2;
+}
+
+#header {
+	display: flex;
+	align-items: end;
+	height: 20vh;
+	border: solid 2px white;
+	color: whitesmoke;
+	border-radius: 10px;
+	width: 50vw;
+}
+
+#selectionBar {
+	border: solid 2px white;
+	background-color: white;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	height: 5vh;
+	width: 50vw;
+	font-size: 0;
+}
+
+button {
+	border: none;
+	width: 10vw;
+	font-size: 20px;
+	height: inherit;
+}
+
+#homeButton {
+	border-top-left-radius: 10px;
+}
+
+#creditsButton {
+	border-top-right-radius: 10px;
+}
+
+section {
+	border: solid 2px white;
+	background-color: white;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	height: 60vh;
+	width: 50vw;
+}
+
+#footer {
+	border: solid 2px white;
+	background-color: white;
+	border-radius: 10px;
+	margin-top: 3vh;
+	width: 50vw;	
 }

@@ -114,14 +114,6 @@ button {
 	border-top-right-radius: 10px;
 }
 
-#content {
-	border: solid 2px white;
-	background-color: white;
-	height: 66vh;
-	width: 50vw;
-	border-radius: 10px;
-}
-
 section {
 	border: solid 2px white;
 	background-color: white;

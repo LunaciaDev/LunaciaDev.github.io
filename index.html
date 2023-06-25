@@ -22,7 +22,6 @@
                 <!--for later, might not use at all-->
             </div>
         </div>
-        <div id="content">
             <div id="selectionBar">
                 <button class="activeButton" onclick="swapSections('aboutMe')" id="aboutMeButton">home</button>
                 <button class="inactiveButton" onclick="swapSections('interests')" id="interestsButton">interests</button>
@@ -30,29 +29,30 @@
                 <button class="inactiveButton" onclick="swapSections('contacts')" id="contactsButton">contacts</button>
                 <button class="inactiveButton" onclick="swapSections('credits')" id="creditsButton">credits</button>
             </div>
-            <section class="activeSection" id="aboutMe">
-                <p>Hi, I am Lunacia!</p>
-                <p>I am a Vietnamese CS Major student.</p>
-                <p>I love solving puzzles, books and programming.</p>
-                <p>I am currently studying for a Bachelor's Decree while working on small projects on the side.</p>
+            <section id="content">
+                <div class="activeSection" id="aboutMe">
+                    <p>Hi, I am Lunacia!</p>
+                    <p>I am a Vietnamese CS Major student.</p>
+                    <p>I love solving puzzles, books and programming.</p>
+                    <p>I am currently studying for a Bachelor's Decree while working on small projects on the side.</p>
+                </div>
+                <div class="inactiveSection" id="interests" style="display: none;">
+                    <p>I love...</p>
+                    <p>    Watching anime; My favourite is Yuru Camp</p>
+                    <p>    Listening to Orchestras</p>
+                    <p>    Eating salt-flavored potato chips</p>
+                    <p>    Reading about the universe</p>
+                </div>
+                <div class="inactiveSection" id="myWorks" style="display: none;">
+                    TBA
+                </div>
+                <div class="inactiveSection" id="contacts" style="display: none;">
+                    TBA
+                </div>
+                <div class="inactiveSection" id="credits" style="display: none;">
+                    TBA
+                </div>
             </section>
-            <section class="inactiveSection" id="interests" style="display: none;">
-                <p>I love...</p>
-                <p>    Watching anime; My favourite is Yuru Camp</p>
-                <p>    Listening to Orchestras</p>
-                <p>    Eating salt-flavored potato chips</p>
-                <p>    Reading about the universe</p>
-            </section>
-            <section class="inactiveSection" id="myWorks" style="display: none;">
-                TBA
-            </section>
-            <section class="inactiveSection" id="contacts" style="display: none;">
-                TBA
-            </section>
-            <section class="inactiveSection" id="credits" style="display: none;">
-                TBA
-            </section>
-        </div>
         <div id="footer">
             <div id="github">
                 <!-- logo here perhaps-->

@@ -27,7 +27,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
     font-family: "Imprima";
-    font-size: 25px;
+    font-size: calc(1rem + 0.6vw);
 	color: black;
 	background-color: #2c373b;
 	line-height: 1.5;
@@ -69,12 +69,13 @@ table {
 	height: 23.5vh;
 	color: whitesmoke;
 	width: 50vw;
+	min-width: 300px;
 	margin-bottom: 1.5vh;
 }
 
 #userName {
 	margin-left: 1vw;
-	font-size: 55px;
+	font-size: calc(1.7rem + 0.8vw);
 }
 
 #selectionBar {
@@ -85,13 +86,15 @@ table {
 	border-top-right-radius: 10px;
 	height: 5vh;
 	width: 50vw;
+	min-width: 300px;
 	font-size: 0;
 }
 
 button {
 	border: none;
 	width: 10vw;
-	font-size: 20px;
+	min-width: 60px;
+	font-size: calc(0.4rem + 0.95vw);
 	height: inherit;
 }
 
@@ -124,6 +127,7 @@ section {
 	border-bottom-right-radius: 10px;
 	height: 55vh;
 	width: 50vw;
+	min-width: 300px;
 }
 
 #footer {
@@ -132,8 +136,23 @@ section {
 	border-radius: 10px;
 	margin-top: 3vh;
 	width: 50vw;
+	min-width: 300px;
 	display: flex;
 	justify-content: center;	
+}
+
+a {
+	display: flex;
+	margin-top: 10px;
+	min-height: 20px;
+	height: 1.3vw;
+}
+
+svg {
+	min-width: 20px;
+	min-height: 20px;
+	width: 1.3vw;
+	height: 1.3vw;
 }
 
 .fadeInAnim {
@@ -148,7 +167,7 @@ section {
 
 .header {
 	text-align: center;
-	font-size: 40px;
+	font-size: calc(1.6rem + 0.6vw);
 	margin-top: 3vh;
 	margin-bottom: 3vh;
 }
@@ -158,12 +177,9 @@ p {
 	margin-right: 2vw;
 }
 
-a {
-	height: 25px;
-}
-
 #userFrame {
 	width: 10vw;
+	min-width: 80px;
 }
 
 .logoPair {

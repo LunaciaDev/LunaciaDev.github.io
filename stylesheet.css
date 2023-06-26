@@ -178,8 +178,9 @@ p {
 }
 
 #userFrame {
-	width: 10vw;
-	min-width: 80px;
+	width: 15vw;
+	max-width: 192px;
+	min-width: 100px;
 }
 
 .logoPair {

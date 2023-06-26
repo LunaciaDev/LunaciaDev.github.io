@@ -141,7 +141,7 @@ section {
 	justify-content: center;	
 }
 
-a {
+.logoPair a {
 	display: flex;
 	margin-top: 10px;
 	min-height: 20px;

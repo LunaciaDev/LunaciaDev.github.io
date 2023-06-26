@@ -98,6 +98,7 @@ button {
 	width: 10vw;
 	min-width: 70px;
 	font-size: calc(0.7rem + 0.4vw);
+	font-family: "Imprima";
 	height: inherit;
 }
 

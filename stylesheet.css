@@ -97,7 +97,7 @@ button {
 	border: none;
 	width: 10vw;
 	min-width: 70px;
-	font-size: calc(0.7rem + 0.4vw);
+	font-size: calc(0.7rem + 0.7vw);
 	font-family: "Imprima";
 	height: inherit;
 }
@@ -108,6 +108,7 @@ button {
 
 .activeButton {
 	background-color: #fffdf7;
+	color: black;
 }
 
 .inactiveButton {

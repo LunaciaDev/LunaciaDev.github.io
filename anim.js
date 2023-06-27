@@ -1,8 +1,13 @@
 function swapSections(targetSection) {
     let currentElement = document.getElementsByClassName("activeSection")[0];
-    let activeButton = document.getElementById(currentElement.id+"Button");
     let targetElement = document.getElementById(targetSection);
+
+    if (currentElement === targetElement) {
+        return;
+    }
+
     let targetButton = document.getElementById(targetSection+"Button");
+    let activeButton = document.getElementById(currentElement.id+"Button");
 
     currentElement.className = "inactiveSection";
     activeButton.className = "inactiveButton";

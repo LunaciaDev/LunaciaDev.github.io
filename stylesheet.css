@@ -99,9 +99,6 @@ button {
 	min-width: 70px;
 	font-size: calc(0.7rem + 0.7vw);
 	font-family: "Imprima";
-	display: inline-flex;
-	justify-content: center;
-	line-height: 1.5;
 	height: inherit;
 }
 

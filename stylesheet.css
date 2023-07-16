@@ -25,11 +25,19 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
+:root {
+	--background-color: #2c373b;
+	--contrast-background-color: #fffdf7;
+	--main-text-color: black;
+	--contrast-text-color: whitesmoke;
+	--button-onHover-color: gray;
+}
+
 body {
     font-family: "Imprima";
     font-size: calc(1rem + 0.6vw);
-	color: black;
-	background-color: #2c373b;
+	color: var(--main-text-color);
+	background-color: var(--background-color);
 	line-height: 1.5;
 }
 
@@ -69,7 +77,7 @@ table {
 	align-items: end;
 	height: fit-content;
 	margin-top: 1.5vh;
-	color: whitesmoke;
+	color: var(--contrast-text-color);
 	width: 50vw;
 	min-width: 350px;
 	margin-bottom: 1.5vh;
@@ -81,8 +89,8 @@ table {
 }
 
 #selectionBar {
-	border: solid 4px #fffdf7;
-	background-color: #fffdf7;
+	border: solid 4px var(--contrast-background-color);
+	background-color: var(--contrast-background-color);
 	border-bottom: none;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
@@ -103,17 +111,17 @@ button {
 }
 
 .inactiveButton:hover {
-	background-color: gray;
+	background-color: var(--button-onHover-color);
 }
 
 .activeButton {
-	background-color: #fffdf7;
-	color: black;
+	background-color: var(--contrast-background-color);
+	color: var(--main-text-color);
 }
 
 .inactiveButton {
-	background-color: #2c373b;
-	color: white;
+	background-color: var(--background-color);
+	color: var(--contrast-text-color);
 }
 
 #aboutMeButton {
@@ -125,9 +133,9 @@ button {
 }
 
 section {
-	border: solid 4px #fffdf7;
+	border: solid 4px var(--contrast-background-color);
 	border-top: none;
-	background-color: #fffdf7;
+	background-color: var(--contrast-background-color);
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 	height: 70vh;
@@ -136,8 +144,8 @@ section {
 }
 
 #footer {
-	border: solid 4px #fffdf7;
-	background-color: #fffdf7;
+	border: solid 4px var(--contrast-background-color);
+	background-color: var(--contrast-background-color);
 	border-radius: 10px;
 	margin-top: 3vh;
 	margin-bottom: 3vh;

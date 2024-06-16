@@ -38,7 +38,7 @@ jobs:
         with:
           repository: LunaciaDev/Hugo-Exploration
           token: ${{ secrets.HUGO_PAT }}
-          path: main
+          path: './'
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5

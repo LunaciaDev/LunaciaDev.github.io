@@ -48,10 +48,6 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
-      # As Pagefind has yet to be implemented here, we skip this step for now
-      #- name: Generate Pagefind Data
-        #run: |
-        # npx -y pagefind --site public
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

@@ -1,0 +1,59 @@
+baseURL: https://lunaciadev.github.io
+languageCode: en-us
+title: Lunacia
+theme: LunaciaBlogTheme
+
+menus:
+  main:
+    - name: Home
+      pageRef: /
+      weight: 1
+    - name: Blog
+      pageRef: /blog
+      weight: 2
+    - name: RSS
+      pageRef: /rss.xml
+      weight: 4
+
+markup:
+  highlight:
+    anchorLineNos: false
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ""
+    hl_inline: false
+    lineAnchors: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: false
+    noHl: false
+    style: catppuccin-mocha
+    tabWidth: 4
+
+services:
+  twitter:
+    disableInlineCSS: true
+  instagram:
+    disableInlineCSS: true
+
+privacy:
+  disqus:
+    disable: true
+  googleAnalytics:
+    disable: true
+    respectDoNotTrack: true
+  instagram:
+    disable: false
+    simple: true
+  twitter:
+    disable: false
+    enableDNT: true
+    simple: true
+  vimeo:
+    disable: false
+    enableDNT: true
+    simple: false
+  youtube:
+    disable: false
+    privacyEnhanced: true

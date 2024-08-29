@@ -1,12 +1,14 @@
 :root {
     --base-font: "Cantarell", sans-serif;
-    --heading-font: "Oleo Script Swash Caps", system-ui;
+    --heading-font: "Oleo Script", system-ui;
     --monospaced-font: "Fantasque Sans Mono", monospace;
     --bold-monospaced-font: "Fantasque Sans Mono Bold", monospace;
     --italic-monospaced-font: "Fantasque Sans Mono Italic", monospace;
     --bold-italic-monospaced-font: "Fantasque Sans Mono Bold Italic", monospace;
     --color-bg: #020c0f;
     --color-fg: #e8f4ff;
+    --color-smalltext: #cbd3db;
+    --color-accent: #78d9ff;
     --color-link: #51c1cc;
 }
 
@@ -22,6 +24,10 @@ a {
     color: var(--color-link);
 }
 
+a:hover {
+    color: var(--color-accent);
+}
+
 h1, h2, h3 {
     font-family: var(--heading-font);
 }
@@ -31,21 +37,26 @@ h1 {
 }
 
 h2 {
-    font-size: 2.25rem;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+    margin-top: 1.375rem;
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 2.25rem;
 }
 
 header {
-    height: 8vh;
+    height: 12vh;
     align-content: center;
 }
 
 footer {
     margin-top: 30px;
+    height: 8vh;
+}
+
+p {
+    margin-top: 1.375rem;
 }
 
 /* Targetted Stylings */
@@ -53,11 +64,28 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: end;
-    padding-right: 30px;
 }
 
 #navigationList li {
     margin-left: 30px;
+}
+
+#navigationList a {
+    text-decoration: none;
+    color: var(--color-fg);
+}
+
+#navigationList a:hover {
+    color: var(--color-accent);
+}
+
+#homeLink {
+    margin-top: 1.375rem;
+}
+
+#smallText {
+    font-size: 1.1rem;
+    color: var(--color-smalltext);
 }
 
 /* Shared Stylings */
@@ -70,14 +98,30 @@ footer {
     min-width: 600px;
 }
 
-.postDate {
-    font-size: 1.2rem;
+.postItem {
+    margin-bottom: 1.375rem;
+}
+
+.postItem h2 {
+    margin-top: 0;
+}
+
+.postItem a {
+    text-decoration: none;
+}
+
+.postItem a:hover {
+    text-decoration: underline;
 }
 
 .bigHeader {
-    margin: 20px 0 20px 0;
+    margin: 1.375rem 0 1.375rem 0;
 }
 
 .smallSpacer {
     height: 30px;
+}
+
+.inline {
+    display: inline;
 }

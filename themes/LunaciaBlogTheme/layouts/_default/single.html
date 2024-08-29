@@ -1,11 +1,18 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
+    <h1>{{ .Title }}</h1>
 
-  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-  {{ $dateHuman := .Date | time.Format ":date_long" }}
-  <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+    <div id="smallText">
+    {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+    {{ $dateHuman := .Date | time.Format ":date_long" }}
+    <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time> - 
+    {{ $readingTime := .ReadingTime}}
+    {{ if eq $readingTime 1}}
+        <div class="inline" id="readingTime">About 1 minute to read</div>
+    {{ else }}
+        <div class="inline" id="readingTime">About {{ $readingTime }} minutes to read</div>
+    {{ end }}
+    </div>
 
-  {{ .Content }}
-  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
-  <a href="/">Return to Home</a>
+    {{ .Content }}
+    <div id="homeLink"><a href="/">Return to Home</a></div>
 {{ end }}

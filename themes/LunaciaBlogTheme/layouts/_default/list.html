@@ -2,11 +2,13 @@
     {{ .Content }}
     <div class="smallSpacer"></div>
     {{ range .Pages }}
-        <div class="postDate">
-            {{ .Date | time.Format "Jan 02, 2006" }}
+        <div class="postItem">
+            <div class="smallText">
+                {{ .Date | time.Format "Jan 02, 2006" }}
+            </div>
+            <h2>
+                <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+            </h2>
         </div>
-        <h2><a href="{{ .RelPermalink }}">
-            {{ .LinkTitle }}
-        </a></h2>
     {{ end }}
 {{ end }}
